@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <style>
+
+        h1{
+            text-align: center;
+        }
+        form {
+            background-color: #619cff;
+            /*border: 1px solid #000;*/
+            color: #fff;
+            border-collapse: collapse;
+            margin: 0 auto;
+            width: 170px;
+            text-align: left;
+            padding: 20px 40px;
+        }
+    </style>
+</head>
+<body>
+<h1>用户注册页面</h1>
+<hr>
+<br><br>
+<form action="registerGuide" name="form">
+    用户编号：<input style="margin-bottom: 10px" type="text" name="gid"/><br>
+    用户姓名：<input style="margin-bottom: 10px" type="text" name="gname"/><br>
+    用户密码：<input style="margin-bottom: 10px" type="password" name="password"/><br>
+    密码确认：<input style="margin-bottom: 10px" type="password" name="password1"/><br>
+    用户权限：<br>
+    <select style="width: auto;margin-bottom: 10px;height:28px;" name="superuser">
+        <option selected="0" value="1">普通用户</option>
+        <option value="1">超级管理员</option>
+    </select><br>
+    备注信息：<br>
+    <select name="flag" style="margin-bottom: 10px;height: 28px;">
+        <option selected="1" value="1">正常用户</option>
+        <option value="2">历史用户</option>
+    </select><br>
+    <input type="submit" value="确定" onclick="return check();"/>
+</form>
+<script type="text/javascript" src="/js/register.js"></script>
+</body>
+</html>

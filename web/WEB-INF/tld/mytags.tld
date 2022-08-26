@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>mytags</short-name>
+    <uri>http://lingnan.edu.cn</uri>
+    <!-- Invoke 'Generate' action to add tags or functions -->
+    <tag>
+        <description>fadsafsfasfas</description>
+        <name>example01</name>
+        <tag-class>cn.edu.lingnan.tag.TagExample01</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+
+    <tag>
+        <description>fadsafsfasfas</description>
+        <name>tagSimple</name>
+        <tag-class>cn.edu.lingnan.tag.TagSimple</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+
+    <tag>
+        <name>example02</name>
+        <tag-class>cn.edu.lingnan.tag.TagExample02</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <!--???????????-->
+            <rtexprvalue>false</rtexprvalue>
+            <!--??????-->
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>example03</name>
+        <tag-class>cn.edu.lingnan.tag.TagExample03</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>count</name>
+            <required>true</required>
+            <!--???????????-->
+            <rtexprvalue>true</rtexprvalue>
+            <!--??????-->
+            <type>java.lang.Integer</type>
+        </attribute>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>false</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+</taglib>
