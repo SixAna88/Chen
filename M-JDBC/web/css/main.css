@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* 头部样式 */
+.header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+}
+
+li a {
+    margin-right: 6px;
+    border: 1px solid #fff;
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* 鼠标移动到选项上修改背景颜色 */
+li a:hover {
+    background-color: white;
+    color: #555;
+}
